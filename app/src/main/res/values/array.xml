@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabs_names">
+        <item>Rysy</item>
+        <item>Morskie Oko</item>
+        <item>Kasprowy Wierch</item>
+        <item>Dolina Gąsienicowa</item>
+        <item>Dolina Chochołowska</item>
+    </string-array>
+</resources>

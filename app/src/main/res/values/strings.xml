@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tatry na żywo</string>
+    <string name="action_settings">Ustawienia</string>
+
+    <string name="rysy">
+        "http://kamery.topr.pl/moko/moko_01.jpg"
+    </string>
+    <string name="morskie_oko">
+        http://kamery.topr.pl/moko_TPN/moko_02.jpg
+    </string>
+    <string name="kasprowy_wierch">
+        http://kamery.topr.pl/goryczkowa/gorycz.jpg
+    </string>
+    <string name="hala_gasienicowa">
+        http://kamery.topr.pl/gasienicowa/gasie.jpg
+    </string>
+    <string name="dolina_chocholowska">
+        http://kamery.topr.pl/chocholowska/chocholow.jpg
+    </string>
+
+    <string name="server_error">
+        Wystąpił błąd serwera. Spróbuj odświeżyć widok.
+    </string>
+
+    <string name="close">
+        Zamknij
+    </string>
+
+
+</resources>
