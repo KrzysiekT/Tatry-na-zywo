@@ -12,7 +12,7 @@ import com.tarnawski.pogoda.R;
 public class Rysy extends ParentFragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_rysy, container, false);
         ImageView rysyView = (ImageView) rootView.findViewById(R.id.rysy);
@@ -31,10 +31,10 @@ public class Rysy extends ParentFragment {
     }
 
     /** preparing parsing temperature function
-    public void loadTemperature(String serviceURL, TextView textView){
-        ParseTemperature task = new ParseTemperature(textView);
-        task.execute(serviceURL);
-    }
+     public void loadTemperature(String serviceURL, TextView textView){
+     ParseTemperature task = new ParseTemperature(textView);
+     task.execute(serviceURL);
+     }
      */
 
 }

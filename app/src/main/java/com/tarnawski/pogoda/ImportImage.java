@@ -14,8 +14,8 @@ import java.net.URLConnection;
 
 public class ImportImage extends AsyncTask<String, Void, Bitmap> {
 
-    private InputStream Stream = null;
     private final WeakReference<ImageView> imageViewReference;
+    private InputStream Stream = null;
 
     public ImportImage(ImageView imageView) {
         // Use a WeakReference to ensure the ImageView can be garbage collected
@@ -31,22 +31,31 @@ public class ImportImage extends AsyncTask<String, Void, Bitmap> {
     @Override
     protected Bitmap doInBackground(String... params) {
 
-        try{
+        try {
             URL myURL = new URL(params[0]);
-            try{
+            try {
                 URLConnection conn = myURL.openConnection();
-                try{
+                try {
+
+                    // TODO: Move that to new AsyncTask class, now we have serious SOLID rules breakage - due of testing...
+                    // TODO: http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception
+                    try {
+                        ParseTemperature parser = new ParseTemperature();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
 
                     Stream = conn.getInputStream();
                     return BitmapFactory.decodeStream(Stream);
 
-                } catch(IOException e){
+
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
-            } catch(IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
-        } catch (MalformedURLException e){
+        } catch (MalformedURLException e) {
             e.printStackTrace();
         }
 
