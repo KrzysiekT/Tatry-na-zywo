@@ -20,6 +20,14 @@
         http://kamery.topr.pl/chocholowska/chocholow.jpg
     </string>
 
+    <string name="przedni_staw">
+        http://kamery.topr.pl/stawy2/stawy2.jpg
+    </string>
+
+    <string name="buczynowa">
+        http://kamery.topr.pl/stawy1/stawy1.jpg
+    </string>
+
     <string name="server_error">
         Wystąpił błąd serwera. Spróbuj odświeżyć widok.
     </string>

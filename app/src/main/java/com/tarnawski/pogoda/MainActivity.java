@@ -18,7 +18,7 @@ public class MainActivity extends FragmentActivity implements
 
     // Tab titles
     // TODO:  should be placed in values/string in future, and also should be configurable
-    private String[] tabs = { "Rysy", "Morskie Oko", "Kasprowy Wierch", "Dolina Gąsienicowa", "Dolina Chochołowska" };
+    private String[] tabs = {"Rysy", "Morskie Oko", "Kasprowy Wierch", "Dolina Gąsienicowa", "Dolina Chochołowska", "Przedni Staw Polski", "Dolinka Buczynowa"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

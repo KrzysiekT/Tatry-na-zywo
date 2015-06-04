@@ -18,14 +18,8 @@ public class ParentFragment extends android.support.v4.app.Fragment implements l
 
         // Trying to fetch image from server
         ImportImage task = new ImportImage(imageView);
-        // TODO: read about proper exception handling, and what about the log?
+        task.execute(imageURL);
 
-        try {
-            task.execute(imageURL);
-        } catch (Exception e){
-            showError();
-            e.printStackTrace();
-        }
     }
 
     // TODO: refactor this crap!

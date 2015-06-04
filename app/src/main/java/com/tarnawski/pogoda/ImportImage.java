@@ -37,20 +37,17 @@ public class ImportImage extends AsyncTask<String, Void, Bitmap> {
                 URLConnection conn = myURL.openConnection();
                 try {
 
-                    // TODO: Move that to new AsyncTask class, now we have serious SOLID rules breakage - due of testing...
-                    // TODO: http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception
-                    try {
-                        ParseTemperature parser = new ParseTemperature();
-                    } catch (Exception e) {
-                        e.printStackTrace();
+                    Stream = conn.getInputStream();
+                    Bitmap downloadedImage = BitmapFactory.decodeStream(new JPGClosedInputStream(Stream));
+
+                    if (downloadedImage != null) {
+                        return downloadedImage;
+                    } else {
+                        throw new IOException("Failed to decode input stream - corrupted image at server");
                     }
 
-                    Stream = conn.getInputStream();
-                    return BitmapFactory.decodeStream(Stream);
-
-
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    throw new IOException("Failed to get input stream");
                 }
             } catch (IOException e) {
                 e.printStackTrace();
