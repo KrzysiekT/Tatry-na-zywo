@@ -1,5 +1,5 @@
 # Tatry-na-zywo
-App available to download here: https://play.google.com/store/apps/details?id=com.tarnawski.pogoda
+App available to download here: https://play.google.com/store/apps/details?id=com.tarnawski.tatry
 
 Hello!
 
@@ -19,9 +19,10 @@ TODO:
 DONE:
 
 Fixed problem with scaling images at FHD (and above) screens.
-Fixed problem with loading corrupted images from TOPR servers (unfortunately this happens very often)
+Fixed problem with loading corrupted images from TOPR servers (unfortunately this happens very often).
 
 Maybe you will find some free time to contribute?
+
 Best, Kris
 
 
